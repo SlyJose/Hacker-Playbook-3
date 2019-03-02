@@ -1,16 +1,18 @@
 Nmap Diffing
 
-For keeping track of ports and asset status. Script to test:
+# This script will allow you to keep track of live hosts and ports open in them
 
 #!/bin/bash
 mkdir /opt/nmap_diff
 d=$(date +%Y-%m-%d)
 y=$(date -d yesterday +%Y-%m-%d)
-/usr/bin/nmap -T4 -oX /opt/nmap_diff/scan_$d.xml 0.0.0.0/0 > /dev/null 2>&1
+/usr/bin/nmap -T4 -oX /opt/nmap_diff/scan_$d.xml 192.168.0.0/24 >/dev/null 2>&1
 if [ -e /opt/nmap_diff/scan_$y.xml ]; then
-  /usr/bin/ndiff/opt/nmap_diff/scan_$y.xml
+	/usr/bin/ndiff /opt/nmap_diff/scan_$y.xml
 /opt/nmap_diff/scan_$d.xml > /opt/nmap_diff/diff.txt
 fi
+
+
 
 Results:
 
