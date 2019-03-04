@@ -16,3 +16,19 @@ fi
 
 Results:
 
+- Requires code debugging for variable declaration of XML file.
+
+*****
+
+Alerts for opening ports: https://gist.github.com/jgamblin/7d64a284e5291a444e12c16daebc81e0
+
+***
+
+SSL Scrape
+
+# This will allow us to scan for hostnames, owners, expirations, in certificates.
+
+Script location: https://github.com/cheetz/sslScrape/blob/master/sslScrape.py
+
+
+
