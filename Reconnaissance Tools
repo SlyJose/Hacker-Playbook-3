@@ -30,5 +30,10 @@ SSL Scrape
 
 Script location: https://github.com/cheetz/sslScrape/blob/master/sslScrape.py
 
+Results: 
+-Painfull installation process (manual)
+-Masscan is using a high rate, so in virtual environments is not very usefull, must reduce the rate
+
+
 
 
