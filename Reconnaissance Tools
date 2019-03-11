@@ -34,6 +34,22 @@ Results:
 -Painfull installation process (manual)
 -Masscan is using a high rate, so in virtual environments is not very usefull, must reduce the rate
 
+# For Cloud, Bucket finder (collector of buckets)
+
+Bucket Finder
+
+This was tested against a AWS configuration cyberspacekittens.com.
+Results:
+
+Successfull bucket find, associated files downloaded. 
+
+
+
+
+
+
+
+
 
 
 
